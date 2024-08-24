@@ -677,6 +677,12 @@
         --tw-ring-opacity: 1;
         --tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity));
       }
+      .centered-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Or any specific height */
+      }
       @media (min-width: 640px) {
         .sm\:size-16 {
           width: 4rem;
@@ -799,8 +805,11 @@
       }
     </style>
   </head>
-  <body class="font-sans antialiased w-full h-full">
-    <div id="container" class="flex justify-center">
+  <body class="font-sans antialiased">
+    <div
+      id="container"
+      class="flex items-center justify-center h-screen centered-container"
+    >
       <div class="text-xl">Welcome to Mosphere</div>
     </div>
   </body>
