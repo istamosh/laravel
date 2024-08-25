@@ -1,17 +1,6 @@
 {
-    "tabWidth": 2,
-    "useTabs": false,
-    "plugins": [
-        "prettier-plugin-blade"
-    ],
-    "overrides": [
-        {
-            "files": [
-                "*.blade.php"
-            ],
-            "options": {
-                "parser": "blade"
-            }
-        }
-    ]
+  "plugins": ["prettier-plugin-blade"],
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true
 }

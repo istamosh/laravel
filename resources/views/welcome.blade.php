@@ -6,6 +6,9 @@
 
     <title>Laravel</title>
 
+    {{-- responsible for loading your assets with Vite and ensures HMR works properly. --}}
+    @vite(["resources/css/app.css", "resources/js/app.js"])
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
@@ -806,11 +809,16 @@
     </style>
   </head>
   <body class="font-sans antialiased">
-    <div
-      id="container"
-      class="flex items-center justify-center h-screen centered-container"
-    >
+    <div id="container" class="flex flex-col h-screen centered-container">
       <div class="text-xl">Welcome to Mosphere</div>
+      <div class="flex w-full justify-center">
+        <a href="https://www.instagram.com/istamosh">Instagram</a>
+        <a href="https://www.github.com/istamosh">Github</a>
+        <a href="https://www.linkedin.com/in/istamosh">LinkedIn</a>
+        <a href="https://www.twitter.com/istamosh">Twitter</a>
+        <a href="https://www.facebook.com/istamosh">Facebook</a>
+        <a href="https://www.youtube.com/istamosh">Youtube</a>
+      </div>
     </div>
   </body>
 </html>
